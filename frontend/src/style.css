@@ -5,6 +5,43 @@ body{
     font-optical-sizing: auto;
     /* font-weight: <weight>; */
 }
+.data-list{
+    background-color:#D8C3A4;
+    display: flex;
+    width: 100%;
+    /* flex-direction: row; */
+}
+
+.Test{
+    display: flex;
+    color:#505050;
+    width: 250px;
+    height:350px;
+    margin: 20px;
+    background-color: #EAE8DC;
+    flex-direction: column-reverse;
+    border-radius: 7px
+}
+
+.Test > div{
+     display: flex;
+     /* flex-direction: column; */
+    /*color:#505050;
+    width: 250px;
+    height:250px;
+    margin: 20px; */
+
+    margin: 3px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.Test > h2{
+     display: flex;
+     justify-content: center;
+    margin: 3px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
 .header{
     display: flex;
     justify-content: right;
@@ -20,7 +57,7 @@ body{
     color: #505050;
 }
 .nameOfBookIndex {
-    /* Название книги */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 150px;
@@ -39,7 +76,7 @@ a:nth-child(4){
     margin-right: 100px;
 }
 .logo{
-    /* логотип */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
 position: absolute;
 width: 290px;
@@ -87,7 +124,7 @@ top: 0px;
 .buttonNameOfGenre1 {
     background-color: #D8C3A4;
     color: white;
-    position: absolute;
+    /* position: absolute; */
     width: 170px;
     height: 36px;
     left: 893px;
@@ -108,7 +145,7 @@ top: 0px;
     top: 677px;
 }
 .backgroundcardsGenres {
-    /*не удалять*/
+    /*пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
     position: absolute;
     width: 1920px;
     height: 350px;
@@ -118,7 +155,7 @@ top: 0px;
 }
 
 .backgroundcardsAuthors {
-    /* задний фон */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ */
 
     position: absolute;
     width: 1919px;
@@ -166,7 +203,7 @@ top: 1549px;
 }
 
 .icon1 {
-    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. не удалять */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 332px;
@@ -186,7 +223,7 @@ top: 1549px;
 }
 
 .icon2 {
-    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. не удалять */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 332px;
@@ -205,7 +242,7 @@ top: 1549px;
     color: #2D170C;
 }
 .icon3 {
-    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. не удалять */
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 332px;
@@ -224,7 +261,7 @@ top: 1549px;
     color: #2D170C;
 }
 .footerBackground {
-    /* задний фон */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ */
 
     position: absolute;
     width: 1920px;
@@ -244,8 +281,8 @@ top: 1549px;
     top: 2225px;
 }
 .textgenres {
-    /* Жанры */
-    /*не удалять*/
+    /* пїЅпїЅпїЅпїЅпїЅ */
+    /*пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
     position: absolute;
     width: 79px;
     height: 29px;
@@ -261,7 +298,7 @@ top: 1549px;
     color: #505050;
 }
 .textgenresGenres {
-    /*Не удалять*/
+    /*пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
     position: absolute;
     width: 79px;
     height: 29px;
@@ -277,7 +314,7 @@ top: 1549px;
     color: #505050;
 }
 .textAuthors {
-    /* Авторы */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     left: 9.64%;
@@ -330,9 +367,9 @@ top: 1549px;
     top: 648px;
 }
 .nameOfGenre1 {
-    /* Не удалять */
+    /* пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
-    position: absolute;
+    /* position: absolute; */
     width: 103px;
     height: 24px;
     left: 470px;
@@ -345,7 +382,7 @@ top: 1549px;
     color: #505050;
 }
 .buttonNameOfGenre1 {
-    /*Не удалять*/
+    /*пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
     position: absolute;
     width: 170px;
     height: 36px;
@@ -353,7 +390,7 @@ top: 1549px;
     top: 273px;
 }
 .nameOfGenre2 {
-    /* Детектив */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 103px;
@@ -377,7 +414,7 @@ top: 1549px;
     top: 398px;
 }
 .nameOfGenre3 {
-    /* Детектив */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
  
     position: absolute;
     width: 103px;
@@ -401,7 +438,7 @@ top: 1549px;
 }
 
 .nameOfGenre4 {
-    /* Детектив */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 103px;
@@ -441,7 +478,7 @@ top: 1549px;
     top: 1466.64px;
 }
 .openAllGenresIndex {
-    /* Group 514 Не удалять*/
+    /* Group 514 пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
 
     position: absolute;
     width: 104px;
@@ -449,9 +486,9 @@ top: 1549px;
     left: 1547px;
     top: 602.64px;
 }
-/*Список авторов*/
+/*пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
 .FIOAuthor1 {
-    /* Аверин Роман Васильевич */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 295px;
@@ -466,7 +503,7 @@ top: 1549px;
     color: #505050;
 }
 .dateAuthor1{
-    /* 19.11.2000-Н.В. */
+    /* 19.11.2000-пїЅ.пїЅ. */
 
     position: absolute;
     width: 113px;
@@ -492,7 +529,7 @@ top: 1549px;
     top: 273px;
 }
 .FIOAuthor2 {
-    /* Аверин Роман Васильевич */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 295px;
@@ -508,7 +545,7 @@ top: 1549px;
 }
 
 .dateAuthor2 {
-    /* 19.11.2000-Н.В. */
+    /* 19.11.2000-пїЅ.пїЅ. */
 
     position: absolute;
     width: 113px;
@@ -535,7 +572,7 @@ top: 1549px;
     top: 398px;
 }
 .FIOAuthor3 {
-    /* Аверин Роман Васильевич */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 295px;
@@ -551,7 +588,7 @@ top: 1549px;
 }
 
 .dateAuthor3 {
-    /* 19.11.2000-Н.В. */
+    /* 19.11.2000-пїЅ.пїЅ. */
 
     position: absolute;
     width: 113px;
@@ -578,7 +615,7 @@ top: 1549px;
     top: 523px;
 }
 .FIOAuthor4 {
-    /* Аверин Роман Васильевич */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 295px;
@@ -594,7 +631,7 @@ top: 1549px;
 }
 
 .dateAuthor4 {
-    /* 19.11.2000-Н.В. */
+    /* 19.11.2000-пїЅ.пїЅ. */
 
     position: absolute;
     width: 113px;
@@ -636,7 +673,7 @@ top: 1549px;
     color: #505050;
 }
 .AuthorsNameAuthor {
-    /* Аверин Роман Васильевич */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 292px;
@@ -651,7 +688,7 @@ top: 1549px;
     color: #505050;
 }
 .AuthorsDateAuthor {
-    /* Годы жизни: 19.11.2000-Н.В. */
+    /* пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: 19.11.2000-пїЅ.пїЅ. */
 
     position: absolute;
     width: 219px;
@@ -677,7 +714,7 @@ top: 1549px;
     border-radius: 5px;
 }
 .AuthorsUpperText {
-    /* Автор */
+    /* пїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 77px;
@@ -743,7 +780,7 @@ top: 1549px;
     top: 200px;
 }
 .AuthorCardText1 {
-    /* Шерлок Холмс */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     left: 0.19%;
@@ -780,7 +817,7 @@ top: 1549px;
     border-radius: 5px;
 }
 .nameOfAuthorBooks {
-    /* Книги автора */
+    /* пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 171px;
@@ -797,7 +834,7 @@ top: 1549px;
     color: #505050;
 }
 .bookName {
-    /* Название книги */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 279px;
@@ -827,7 +864,7 @@ top: 1549px;
 }
 
 .bookAuthor {
-    /* Аверин Роман Васильевич */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
     position: absolute;
     width: 288px;
     height: 24px;
@@ -859,7 +896,7 @@ top: 1549px;
 }
 
 .dateBook {
-    /* Год издания: 2023 */
+    /* пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 2023 */
 
     position: absolute;
     width: 148px;
