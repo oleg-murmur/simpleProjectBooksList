@@ -6,6 +6,20 @@
     width: 100%;
     height: 100%;
 }
+#book-list-container{
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color:#D8C3A4;
+}
+.filter-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+}
 .titlePage{
     width: 79px;
     height: 29px;
@@ -20,17 +34,19 @@
     /* justify-content: end; */
     align-items: start;
     color: #505050;
+    padding: 20px;
 }
 .booksPage-bookContainer{
-    background-color:#D8C3A4;
+    background-color:#afa390;
     display: flex;
-    /* min-width: 1000px; */
+    min-width: 800px;
     /* max-width: 1200px; */
-    height: 1000px;
-    justify-content: center;
+    height: auto;
+    /* justify-content: center; */
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap:wrap;
+    padding: 20px;
 }
 
 .booksPage-bookContainer-bookItem{
@@ -82,4 +98,82 @@
     text-decoration: none;
     color:#000000;
     border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+/*      INPUT                 */
+
+input {
+    margin: 10px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    color: #999;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/*          DROP DOWN         */
+
+button{
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+select{
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+select {
+    padding: 8px; /* отступ вокруг текста */
+    font-size: 16px; /* размер шрифта */
+    border: 1px solid #ccc; /* граница */
+    border-radius: 5px; /* закругление углов */
+    outline: none; /* убираем стандартное выделение элемента */
+}
+
+select:hover {
+    border-color: #555; /* цвет границы при наведении */
+}
+
+select:focus {
+    border-color: #007bff; /* цвет границы при активации (фокусе) */
 }

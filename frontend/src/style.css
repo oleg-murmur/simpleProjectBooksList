@@ -5,17 +5,24 @@ body{
     font-optical-sizing: auto;
     /* font-weight: <weight>; */
 }
+
+#book-list{
+
+}
 .data-list{
     background-color:#D8C3A4;
     display: flex;
-    width: 100%;
+    justify-content: space-around;
+    padding: 15px;
+    /* width: 100%; */
     /* flex-direction: row; */
+    /* background: #000; */
 }
 
 .Test{
     display: flex;
     color:#505050;
-    width: 250px;
+    min-width: 250px;
     height:350px;
     margin: 20px;
     background-color: #EAE8DC;
@@ -115,11 +122,12 @@ top: 0px;
 }
 
 .banner{
-    margin-left: 175px;
+    /* margin-left: 175px; */
     margin-top: 50px;
 }
 .banner > img{
-    width: 1553px;
+    max-width: 100%; /* Максимальная ширина изображения будет равна ширине родительского элемента */
+    height: auto;
 }
 .buttonNameOfGenre1 {
     background-color: #D8C3A4;
@@ -138,25 +146,17 @@ top: 0px;
 }
 /* Group 508 */
 .card1 {
-    position: absolute;
+    /* position: absolute; */
     width: 279px;
     height: 436px;
     left: 265px;
     top: 677px;
 }
 .backgroundcardsGenres {
-    /*�� �������*/
-    position: absolute;
-    width: 1920px;
-    height: 350px;
     left: 0px;
-    top: 635.64px;
-    background: #F9F8F3;
 }
 
 .backgroundcardsAuthors {
-    /* ������ ��� */
-
     position: absolute;
     width: 1919px;
     height: 514px;
@@ -281,9 +281,8 @@ top: 1549px;
     top: 2225px;
 }
 .textgenres {
-    /* ����� */
-    /*�� �������*/
-    position: absolute;
+    /* position: absolute; */
+    padding-left: 65px;
     width: 79px;
     height: 29px;
     left: 169px;
@@ -477,18 +476,25 @@ top: 1549px;
     left: 1547px;
     top: 1466.64px;
 }
+.container-text{
+    max-width: 1680px;
+    display: flex;
+    justify-content: space-between;
+}
 .openAllGenresIndex {
-    /* Group 514 �� �������*/
 
-    position: absolute;
     width: 104px;
     height: 16px;
     left: 1547px;
     top: 602.64px;
+    margin-right: 60px;
 }
-/*������ �������*/
+.openAllGenresIndex > a{
+    text-decoration: none;
+    color: #505050;
+    font-family: 'Montserrat';
+}
 .FIOAuthor1 {
-    /* ������ ����� ���������� */
 
     position: absolute;
     width: 295px;
