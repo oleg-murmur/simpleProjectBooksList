@@ -28,19 +28,21 @@
 
                         <select id="genres">
 
-                            <option value="dog">Пусто</option>
-                            <option value="dog">Эпопея</option>
-                            <option value="cat">Эпопея1</option>
-                            <option value="rabbit">Эпопея2</option>
-                            <option value="hamster">Эпопея3</option>
-                            <option value="parrot">Эпопея4</option>
+                            <option value="">Пусто</option>
+                            <option value="Эпопея">Эпопея</option>
+                            <option value="Роман">Роман</option>
+                            <option value="Роман-Эпопея">Роман-Эпопея</option>
+                            <option value="Детектив">Детектив</option>
+                            <option value="Драма">Драма</option>
+                            <option value="Комедия">Комедия</option>
                         </select>
                         <input id="bookName" placeholder="поиск по названию книги"/>
                         <input id="author" placeholder="авторы"/>
     
                         <!-- <button>Показать</button> -->
                     
-                        <button type="button" onclick="submitForm()">Поиск</button>
+                        <button type="button" onclick="submitForm('')">Поиск</button>
+                        <button type="button" onclick="submitForm('clear')">Отчистить фильтры</button>
                     </form>
                 </div>
                  <div id="book-list">

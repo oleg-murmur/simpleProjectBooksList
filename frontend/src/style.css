@@ -719,23 +719,6 @@ top: 1549px;
     background: #F9F8F3;
     border-radius: 5px;
 }
-.AuthorsUpperText {
-    /* ����� */
-
-    position: absolute;
-    width: 77px;
-    left: 181px;
-    top: 25.45%;
-    bottom: 81.36%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #505050;
-}
 .AuthorCardBackGround1 {
     /* image 70 */
 
@@ -824,7 +807,6 @@ top: 1549px;
 }
 .nameOfAuthorBooks {
     /* ����� ������ */
-
     position: absolute;
     width: 171px;
     left: calc(50% - 171px/2 - 693.5px);
@@ -838,93 +820,4 @@ top: 1549px;
     display: flex;
     align-items: center;
     color: #505050;
-}
-.bookName {
-    /* �������� ����� */
-
-    position: absolute;
-    width: 279px;
-    height: 39px;
-    left: 806px;
-    top: 271px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
-    /* identical to box height */
-
-    color: #505050;
-}
-
-.bookHead {
-    /* image 69 */
-
-    position: absolute;
-    width: 150px;
-    height: 600px;
-    left: 400px;
-    top: 271px;
-    background: url(image.png);
-    border-radius: 5px;
-}
-
-.bookAuthor {
-    /* ������ ����� ���������� */
-    position: absolute;
-    width: 288px;
-    height: 24px;
-    left: 806px;
-    top: 325px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #505050;
-    text-decoration: none;
-}
-
-.genreBook {
-    position: absolute;
-    width: 85px;
-    height: 25px;
-    left: 805px;
-    top: 360px;
-    font-size: 14px;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    border: 2px solid #D8C3A4;
-    border-radius: 20px 20px;
-    text-align: center;
-    background-color: #D8C3A4;
-    color: #505050;
-}
-
-.dateBook {
-    /* ��� �������: 2023 */
-
-    position: absolute;
-    width: 148px;
-    height: 20px;
-    left: 806px;
-    top: 427px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height */
-
-    color: #505050;
-}
-
-.bookDescription {
-    position: absolute;
-    width: 500px;
-    height: 200px;
-    left: 806px;
-    top: 475px;
-    background: #F9F8F3;
-    border-radius: 5px;
 }
