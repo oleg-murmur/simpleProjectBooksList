@@ -28,9 +28,9 @@ class BookController {
     }
 
     async create(req,res,next) {
-        const { bookName, author,genre} = req.body
+        const { bookName, author,genre,direction} = req.body
         await db.sync()
-        const result = await bookModel.create({bookName,author,genre})
+        const result = await bookModel.create({bookName,author,genre,direction})
         console.log(result)
         return res.json({ bookName, author})
     }
@@ -72,15 +72,6 @@ class BookController {
             const result = await bookModel.findAll({
                 where: {
                     ...query,
-                    // author: {
-                    //     [Op.iLike]: `%${lowerAuthor}%`
-                    // },
-                    // bookName: {
-                    //     [Op.iLike]: `%${lowerBookName}%`
-                    // },
-                    // genre: {
-                    //     [Op.iLike]: `%${lowerGenre}%`
-                    // },
                 },
                 offset: 0,
                 // limit: 5

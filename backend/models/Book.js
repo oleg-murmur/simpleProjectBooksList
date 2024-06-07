@@ -29,50 +29,18 @@ module.exports = db.define(
     },
     author: {
       type: DataTypes.STRING,
-      // allowNull defaults to true
     },
     genre: {
       type: DataTypes.STRING,
       allowNull: false,
-      // allowNull defaults to true
+
+    },
+    direction: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },{
   timestamp: true,
   updatedAt: true
   }
 );
-
-// const { Sequelize, DataTypes, Model } = require('sequelize');
-// const {sequelize} = require("./index")
-
-// class Book extends Model {}
-
-// Book.init(
-//   {
-//     // Model attributes are defined here
-//         id: {
-//         type: DataTypes.INTEGER,
-//         autoIncrement: true,
-//         primaryKey: true,
-//       },
-//       bookName: {
-//         type: DataTypes.STRING,
-//         allowNull: false,
-//       },
-//       author: {
-//         type: DataTypes.STRING,
-//         // allowNull defaults to true
-//       },
-//       genre: {
-//         type: DataTypes.STRING,
-//         allowNull: false,
-//         // allowNull defaults to true
-//       }
-//   },
-//   {
-//     // Other model options go here
-//     sequelize, // We need to pass the connection instance
-//     modelName: 'Book', // We need to choose the model name
-//   },
-// );
-// module.exports = Book

@@ -27,6 +27,7 @@ function fetchData(url) {
             bookInf.appendChild(author);
             bookInf.appendChild(genre);
             bookInf.appendChild(name);
+            bookInf.appendChild(name);
 
 
             list.appendChild(bookInf);

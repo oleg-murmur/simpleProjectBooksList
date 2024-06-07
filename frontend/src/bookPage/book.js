@@ -1,6 +1,7 @@
 const bookNameDiv = document.querySelector('.bookName');
 const bookAuthorDiv = document.querySelector('.bookAuthor');
 const genreBookDiv = document.querySelector('.genreBook');
+const bookDescription = document.querySelector('.bookDescription');
 
 const imgElement = document.getElementById('image');
 
@@ -44,6 +45,7 @@ function fetchData(url) {
             bookNameDiv.textContent = bookInfo.bookName;
             genreBookDiv.textContent = bookInfo.genre;
             bookAuthorDiv.textContent = bookInfo.author;
+            bookDescription.textContent = bookInfo.direction;
     })
     .catch(error => {
         console.error('Произошла ошибка при загрузке данных:', error);
