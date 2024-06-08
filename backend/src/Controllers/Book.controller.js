@@ -18,7 +18,7 @@ class BookController {
                         res.send("error"); //дефолтная картинка
                     } else {
                         // Отправляем файл с обложкой клиенту
-                        res.sendFile(coverPath);
+                        res.sendFile(defaultPath);
                     }
                 });
             } else {
@@ -51,11 +51,14 @@ class BookController {
 
     async getById(req,res,next) 
     {
+        const where = {}
         const {id} = req.params
-        
+        if(id || /^\d+$/.test(input)) {
+            where["where"] = {id}
+        }
         await db.sync()
         const result = await bookModel.findOne({
-            where: {id}
+            ...where
         })
         res.json({id: id, result: result})
     }
