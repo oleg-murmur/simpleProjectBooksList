@@ -3,17 +3,24 @@ const db = require("../../models/db.connection")
 const { Op } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
-// const {}= require('../../covers/7.jpg')
 class BookController {
 
 
     async getCoverBookByID(req,res,next) {
         const bookId = req.params.id;
         const coverPath = path.join(__dirname, '../../covers', `${bookId}.jpg`);
+        const defaultPath = path.join(__dirname, '../../covers', `empty.jpg`);
         console.log(coverPath)
         fs.access(coverPath, fs.constants.F_OK, (err) => {
             if (err) {
-                res.status(404).send(err);
+                fs.access(defaultPath, fs.constants.F_OK, (err) => {
+                    if (err) {
+                        res.send("error"); //дефолтная картинка
+                    } else {
+                        // Отправляем файл с обложкой клиенту
+                        res.sendFile(coverPath);
+                    }
+                });
             } else {
                 // Отправляем файл с обложкой клиенту
                 res.sendFile(coverPath);
@@ -23,7 +30,14 @@ class BookController {
 
     async getall(req,res,next)
     { 
-        const result = await bookModel.findAll()
+        const query = {}
+        const {limit} = req.query
+        if(limit) {
+            query['limit']= limit
+        }
+        const result = await bookModel.findAll({
+            ...query
+        })
         return res.json(result)
     }
 
@@ -74,7 +88,6 @@ class BookController {
                     ...query,
                 },
                 offset: 0,
-                // limit: 5
             })
             res.json({result: result})
         } catch (error) {

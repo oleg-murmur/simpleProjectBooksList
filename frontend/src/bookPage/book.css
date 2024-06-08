@@ -1,5 +1,5 @@
 .infoBookContainer{
-    margin-top: 150px;
+    margin-top: 50px;
     padding: 50px;
     background-color: #d8c3a45f;
     display: flex;
@@ -12,7 +12,7 @@
 }
 .InfoBook > div{
     padding: 6px;
-    /* display: inline-block; */
+
 }
 .bookName {
     font-family: 'Montserrat';
@@ -22,7 +22,6 @@
     color: #505050;
 }
 .AuthorsUpperText {
-    /* padding: 100px 0 0 100px; */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -33,17 +32,11 @@
     color: #505050;
 }
 .bookHead {
-    /* image 69 */
     width: 300px; /* Задаем максимальную ширину изображения по ширине контейнера */
     height: auto;
-    /* position: absolute; */
-    /* width: 150px; */
-    /* height: 600px; */
     left: 400px;
     top: 271px;
-    /* background: url(image.png); */
     border-radius: 5px;
-    /* border: solid 2px black; */
     padding: 20px;
     margin-top: 20px
 }
@@ -57,14 +50,12 @@
     text-decoration: none;
 }
 .genreBook {
-    /* position: absolute; */
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
     max-width: 200px;
-    /* min-height: 25px; */
-
     font-size: 14px;
     text-decoration: none;
     font-family: 'Montserrat';
@@ -75,7 +66,6 @@
     color: #505050;
 }
 .bookDescription {
-    /* position: absolute; */
     max-width: 400px;
     min-width: 200px;
     max-height: 300px;
