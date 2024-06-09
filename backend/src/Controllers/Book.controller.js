@@ -62,6 +62,19 @@ class BookController {
         })
         res.json({id: id, result: result})
     }
+    async deleteById(req,res,next) 
+    {
+        const where = {}
+        const {id} = req.params
+        if(id || /^\d+$/.test(input)) {
+            where["where"] = {id}
+        }
+        await db.sync()
+        const result = await bookModel.destroy({
+            ...where
+        })
+        res.json({id: id, result: result})
+    }
 
     async getByFilters(req,res,next) 
     {
