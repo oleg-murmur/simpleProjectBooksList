@@ -1,27 +1,35 @@
-version: "3"
+version: "3.9"
 services:
-  application:
-    container_name: application
-    build: ./backend
-    ports:
-      - 3000:3000
-#   redis:
-#     image: redis:latest
-#     ports:
-#       - "redis://localhost:6379:6379"
-#     volumes:
-#       - "./data:/data"
-#     command: ["redis-server", "--bind", "redis", "--port", "6379"]
-#     networks:
-#       - webnet
-      
-# networks:
-#   webnet:
-
-    # application:
-    # container_name: application
-    # build: ./backend
-    # ports:
-    #   - 3000:3000
-    # depends_on:
-    #   - redis_insight
+    app:
+        container_name: app
+        image: app
+        build: frontend/
+            # context: frontend
+            # dockerfile: frontend/Dockerfile
+        restart: always
+        ports:
+            - "8080:8080"
+    node_app:
+        container_name: node_app
+        build: backend/
+        image: romanProduction/node_live_app
+        ports:
+            - "3000:3000"
+        env_file:
+            - backend/.env
+        depends_on:
+            - node_db
+        restart: always
+    node_db:
+        container_name: node_db
+        image: postgres:12
+        ports:
+        - "5432:5432"
+        environment:
+        - POSTGRES_DB=library
+        - POSTGRES_PASSWORD=12345
+        - POSTGRES_USER=postgres
+        volumes:
+        - node_db_data:/var/lib/postgresql/data
+volumes:
+  node_db_data: {}

@@ -1,0 +1,834 @@
+body{
+    padding: 0px;
+    margin:0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+}
+
+#book-list{
+
+}
+.data-list{
+    background-color:#D8C3A4;
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* flex-direction: row; */
+    /* background: #000; */
+}
+
+.Test{
+    display: flex;
+    color:#505050;
+    width: 17%;
+    /* min-width: 200px; */
+    min-width: 250px;
+    height: 20vw;
+    min-height: 20vw;
+    margin: 20px;
+    background-color: #EAE8DC;
+    flex-direction: column-reverse;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 7px
+}
+@media (max-width: 760px) {
+    .Test {
+        height: 250px; /* Высота элемента также будет зависеть от новой ширины */
+    }
+}
+.Test > div{
+     display: flex;
+    margin: 3px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.Test > h2{
+     display: flex;
+     justify-content: center;
+    margin: 3px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.header{
+    display: flex;
+    justify-content: right;
+    height: 45px;
+    background-color: #eae8dc;
+}
+.header > a{
+    margin-top: 10px;
+    margin-right: 35px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    color: #505050;
+}
+.nameOfBookIndex {
+    /* �������� ����� */
+
+    position: absolute;
+    width: 150px;
+    height: 0px;
+    left: 0px;
+    top: 150px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    color: #505050;
+    text-decoration: none;
+}
+a:nth-child(4){
+    margin-right: 100px;
+}
+.logo{
+width: 290px;
+height: 76px;
+left: 843px;
+top: 0px;
+}
+.logoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    margin-top: 12px;
+    height: 50px;
+    background: #fff;
+}
+.nav > button{
+    padding-top: 13px;
+    display: flex;
+    margin-left: 184px;
+    background-color: #d8c3a4;
+    width: 289px;
+    height: 50px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+.nav > button > img{
+    margin-left: 10px;
+}
+.nav > button > a{
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.section {
+    margin-left: 184px; /* Frame 56 */
+}
+
+.banner{
+    /* margin-left: 175px; */
+    max-width: 3000px;
+    margin-top: 50px;
+}
+.banner > img{
+    width: 100%; /* Максимальная ширина изображения будет равна ширине родительского элемента */
+    height: auto;
+}
+.buttonNameOfGenre1 {
+    background-color: #D8C3A4;
+    color: white;
+    /* position: absolute; */
+    width: 170px;
+    height: 36px;
+    left: 893px;
+    top: 273px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    border: 2px solid #D8C3A4;
+    border-radius: 4px 4px;
+    text-align: center;
+}
+/* Group 508 */
+.card1 {
+    /* position: absolute; */
+    width: 279px;
+    height: 436px;
+    left: 265px;
+    top: 677px;
+}
+.backgroundcardsGenres {
+    left: 0px;
+    max-width: 100%;
+}
+
+.backgroundcardsAuthors {
+    position: absolute;
+    width: 1919px;
+    height: 514px;
+    left: 1px;
+    top: 1510px;
+    /* Color_3 White */
+    background: #F9F8F3;
+}
+.Acard1 {
+    position: absolute;
+    width: 279px;
+    height: 436px;
+    left: 267px;
+    top: 1549px;
+    text-decoration: none;
+}
+.Acard2{
+position: absolute;
+width: 279px;
+height: 436px;
+left: 636px;
+top: 1549px;
+
+}
+.Acard3{
+    /* Group 558 */
+
+position: absolute;
+width: 279px;
+height: 436px;
+left: 1005px;
+top: 1549px;
+
+
+}
+.Acard4{
+    /* Group 559 */
+
+position: absolute;
+width: 279px;
+height: 436px;
+left: 1374px;
+top: 1549px;
+}
+
+.icon1 {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. �� ������� */
+
+    position: absolute;
+    width: 332px;
+    height: 54px;
+    left: 316.64px;
+    top: 502px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #2D170C;
+}
+
+.icon2 {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. �� ������� */
+
+    position: absolute;
+    width: 332px;
+    height: 54px;
+    left: 843.64px;
+    top: 502px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #2D170C;
+}
+.icon3 {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. �� ������� */
+
+    position: absolute;
+    width: 332px;
+    height: 54px;
+    left: 1370.28px;
+    top: 502px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #2D170C;
+}
+.footerBackground {
+    /* ������ ��� */
+
+    position: absolute;
+    width: 1920px;
+    height: 218px;
+    left: 0px;
+    top: 2140px;
+    /* Color_3 White */
+    background: #F9F8F3;
+}
+.footerText {
+    /* Group 555 */
+
+    position: absolute;
+    width: 421px;
+    height: 16px;
+    left: 754px;
+    top: 2225px;
+}
+.textgenres {
+    /* position: absolute; */
+    padding-left: 65px;
+    width: 79px;
+    height: 29px;
+    left: 169px;
+    top: 600px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #505050;
+}
+.textgenresGenres {
+    /*�� �������*/
+    position: absolute;
+    width: 79px;
+    height: 29px;
+    left: 265px;
+    top: 237px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #505050;
+}
+.textAuthors {
+    /* ������ */
+
+    position: absolute;
+    left: 9.64%;
+    right: 85.36%;
+    top: 1480px;
+    bottom: 0.76%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #505050;
+}
+.block1 {
+    /* Group 562 */
+
+    position: absolute;
+    width: 624px;
+    height: 90px;
+    left: 470px;
+    top: 273px;
+}
+.block2 {
+    /* Group 563 */
+
+    position: absolute;
+    width: 624px;
+    height: 90px;
+    left: 472px;
+    top: 398px;
+}
+.block3 {
+    /* Group 564 */
+
+    position: absolute;
+    width: 624px;
+    height: 90px;
+    left: 472px;
+    top: 523px;
+}
+.block4 {
+    /* Group 565 */
+
+    position: absolute;
+    width: 624px;
+    height: 90px;
+    left: 472px;
+    top: 648px;
+}
+.nameOfGenre1 {
+    /* �� ������� */
+
+    /* position: absolute; */
+    width: 103px;
+    height: 24px;
+    left: 470px;
+    top: 273px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+}
+.buttonNameOfGenre1 {
+    /*�� �������*/
+    position: absolute;
+    width: 170px;
+    height: 36px;
+    left: 893px;
+    top: 273px;
+}
+.nameOfGenre2 {
+    /* �������� */
+
+    position: absolute;
+    width: 103px;
+    height: 24px;
+    left: 472px;
+    top: 398px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+}
+.buttonNameOfGenre2 {
+    /* Group 561 */
+
+    position: absolute;
+    width: 170px;
+    height: 36px;
+    left: 895px;
+    top: 398px;
+}
+.nameOfGenre3 {
+    /* �������� */
+ 
+    position: absolute;
+    width: 103px;
+    height: 24px;
+    left: 472px;
+    top: 523px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+}
+.buttonNameOfGenre3 {
+
+    position: absolute;
+    width: 170px;
+    height: 36px;
+    left: 895px;
+    top: 523px;
+}
+
+.nameOfGenre4 {
+    /* �������� */
+
+    position: absolute;
+    width: 103px;
+    height: 24px;
+    left: 472px;
+    top: 648px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+}
+.buttonNameOfGenre4 {
+    /* Group 561 */
+
+    position: absolute;
+    width: 170px;
+    height: 36px;
+    left: 895px;
+    top: 648px;
+}
+.footerTextGenres {
+    /* Group 555 */
+
+    position: absolute;
+    width: 421px;
+    height: 16px;
+    left: 754px;
+    top: 877px;
+}
+.openAllAuthorsIndex {
+    position: absolute;
+    width: 104px;
+    height: 16px;
+    left: 1547px;
+    top: 1466.64px;
+}
+.container-text{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.openAllGenresIndex {
+
+    /* width: 104px; */
+    height: 16px;
+    /* left: 1547px; */
+    /* top: 602.64px; */
+    margin-right: 60px;
+}
+.openAllGenresIndex > a{
+    text-decoration: none;
+    color: #505050;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+.FIOAuthor1 {
+
+    position: absolute;
+    width: 295px;
+    height: 24px;
+    left: 470px;
+    top: 273px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+}
+.dateAuthor1{
+    /* 19.11.2000-�.�. */
+
+    position: absolute;
+    width: 113px;
+    height: 20px;
+    left: 470px;
+    top: 302px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #505050;
+}
+.buttonAuthor1 {
+    /* Group 561 */
+
+    position: absolute;
+    width: 170px;
+    height: 36px;
+    left: 893px;
+    top: 273px;
+}
+.FIOAuthor2 {
+    /* ������ ����� ���������� */
+
+    position: absolute;
+    width: 295px;
+    height: 24px;
+    left: 472px;
+    top: 398px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+}
+
+.dateAuthor2 {
+    /* 19.11.2000-�.�. */
+
+    position: absolute;
+    width: 113px;
+    height: 20px;
+    left: 472px;
+    top: 427px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #505050;
+}
+
+.buttonAuthor2 {
+    /* Group 561 */
+
+    position: absolute;
+    width: 170px;
+    height: 36px;
+    left: 895px;
+    top: 398px;
+}
+.FIOAuthor3 {
+    /* ������ ����� ���������� */
+
+    position: absolute;
+    width: 295px;
+    height: 24px;
+    left: 472px;
+    top: 523px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+}
+
+.dateAuthor3 {
+    /* 19.11.2000-�.�. */
+
+    position: absolute;
+    width: 113px;
+    height: 20px;
+    left: 472px;
+    top: 552px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #505050;
+}
+
+.buttonAuthor3 {
+    /* Group 561 */
+
+    position: absolute;
+    width: 170px;
+    height: 36px;
+    left: 895px;
+    top: 523px;
+}
+.FIOAuthor4 {
+    /* ������ ����� ���������� */
+
+    position: absolute;
+    width: 295px;
+    height: 24px;
+    left: 474px;
+    top: 648px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+}
+
+.dateAuthor4 {
+    /* 19.11.2000-�.�. */
+
+    position: absolute;
+    width: 113px;
+    height: 20px;
+    left: 474px;
+    top: 677px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #505050;
+}
+
+.buttonAuthor4 {
+    /* Group 561 */
+
+    position: absolute;
+    width: 170px;
+    height: 36px;
+    left: 897px;
+    top: 648px;
+}
+.textAuthorsAuthors {
+    position: absolute;
+    left: 15.48%;
+    right: 85.78%;
+    top: 25.58%;
+    bottom: 75.54%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #505050;
+}
+.AuthorsNameAuthor {
+    /* ������ ����� ���������� */
+
+    position: absolute;
+    width: 292px;
+    height: 24px;
+    left: 861px;
+    top: 283px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #505050;
+}
+.AuthorsDateAuthor {
+    /* ���� �����: 19.11.2000-�.�. */
+
+    position: absolute;
+    width: 219px;
+    height: 20px;
+    left: 861px;
+    top: 307px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #505050;
+}
+.descriptionAuthor {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 861px;
+    top: 337px;
+    background: #F9F8F3;
+    border-radius: 5px;
+}
+.AuthorCardBackGround1 {
+    /* image 70 */
+
+    position: absolute;
+    left: 15.89%;
+    right: 72.14%;
+    top: 75.89%;
+    bottom: -5%;
+    background: #EAE8DC;
+    box-shadow: 4px 4px 6px rgba(158, 146, 128, 0.25);
+    border-radius: 5px;
+}
+.AuthorCardImage {
+    /* image 69 */
+
+    position: absolute;
+    left: 16.67%;
+    right: 72.92%;
+    top: 51.02%;
+    bottom: 33.36%;
+    background: url(image.png);
+    border-radius: 5px;
+}
+.footerShortBackgroound {
+    position: absolute;
+    width: 1920px;
+    height: 218px;
+    left: 0px;
+    top: 1107px;
+    /* Color_3 White */
+    background: #F9F8F3;
+}
+.footerShort {
+    /* Group 556 */
+    position: absolute;
+    width: 421px;
+    height: 16px;
+    left: 754px;
+    top: 1192px;
+}
+.AuthorCardBottomBackground {
+    /* Group 547 */
+
+    position: absolute;
+    width: 200px;
+    height: 125px;
+    left: 50px;
+    top: 200px;
+}
+.AuthorCardText1 {
+    /* ������ ����� */
+
+    position: absolute;
+    left: 0.19%;
+    right: 25.46%;
+    top: 0.75%;
+    bottom: 30.04%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 16px */
+    letter-spacing: -0.02em;
+    color: #505050;
+}
+.AuthorCardGenre1card1 {
+    /* Group 545 */
+
+    position: absolute;
+    width: 95px;
+    height: 29px;
+    left: 0px;
+    top: 25px;
+}
+.AuthorImage {
+    /* image 69 */
+
+    position: absolute;
+    left: 32.11%;
+    right: 57.86%;
+    top: 30.36%;
+    bottom: 59.47%;
+    background: url(image.png);
+    border-radius: 5px;
+}
+.nameOfAuthorBooks {
+    /* ����� ������ */
+    position: absolute;
+    width: 171px;
+    left: calc(50% - 171px/2 - 693.5px);
+    top: 69.68%;
+    bottom: 53.13%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #505050;
+}

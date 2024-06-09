@@ -8,6 +8,14 @@
 // const eventName = document.getElementById('eventName');
 
 // import('./style.css');
+const clearFilters = document.getElementById('clearFilters')
+clearFilters.addEventListener('click', function() {
+    submitForm('clear');
+});
+const setFilters = document.getElementById('setFilters')
+setFilters.addEventListener('click', function() {
+    submitForm('');
+});
 function submitForm(submitStatus) {
     const genres = document.getElementById('genres').value;
     const bookName = document.getElementById('bookName').value;
@@ -63,7 +71,7 @@ console.log(filter)
             const noInfo = document.createElement('div');
             noInfo.textContent = "Таких книг не найдено, попробуйте другие фильтры"
             noInfo.className = 'noInfo';
-            list.appendChild(noInfo);
+            list.appendChild(noInfo); 
         }else{
             list.appendChild(bookList);
         }
@@ -79,7 +87,7 @@ console.log(filter)
             
             // moreInfo.className = 'buttonNameOfGenre1'
             moreInfo.textContent = "Подробнее" // Здесь предполагается, что данные содержат поле "title"
-            moreInfo.href = '../bookPage/book.html'
+            moreInfo.href = '../bookPage/book.html'+item.id
             name.textContent = item.bookName; // Здесь предполагается, что данные содержат поле "title"
             genre.textContent = item.genre;
             author.textContent = item.author;

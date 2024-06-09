@@ -7,9 +7,9 @@ import {CleanWebpackPlugin} from 'clean-webpack-plugin'
 let __dirname = path.resolve(path.dirname(''))
 
 export default {
-    entry: './src/bookPage/book.js',
+    entry: './src/bookList/books.js',
     output: {
-        filename: 'bundle.bookPage.[chunkhash].js',
+        filename: 'bundle.bookList.[chunkhash].js',
         path: path.resolve(__dirname, 'build')
     },
     devServer: {
@@ -25,8 +25,8 @@ export default {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'bookPage.html',
-            template: path.resolve(__dirname,'src','bookPage', 'book.html')
+            filename: 'bookList.html',
+            template: path.resolve(__dirname,'src','bookList', 'books.html')
         }),
         // new CleanWebpackPlugin(),
         // new MiniCssExtractPlugin({

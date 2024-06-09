@@ -1,0 +1,192 @@
+.mainContainer{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.noInfo{
+    /* background: rgb(219, 208, 208); */
+    justify-content: center;
+    align-items: center;
+}
+#book-list-container{
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color:#D8C3A4;
+}
+.filter-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+    border-bottom: solid 2px #745d3c89;
+}
+.titlePage{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* display: flex; */
+    /* justify-content: end; */
+    /* align-items: start; */
+    color: #505050;
+    padding: 20px;
+}
+.book-block-main{
+    display: flex;
+    min-height: 400px;
+    justify-content: center;
+    /* align-items: center; */
+}
+.book-block-main > div{
+ padding: 50px 0 0 0;
+}
+.booksPage-bookContainer{
+    /* background-color:#afa390; */
+    display: flex;
+    min-width: 800px;
+    min-height: 400px;
+    /* max-width: 1200px; */
+    height: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding: 20px;
+}
+
+.booksPage-bookContainer-bookItem{
+    display: flex;
+    color:#505050;
+    width: 250px;
+    height:350px;
+    margin: 20px;
+    background-color: #EAE8DC;
+    flex-direction: column-reverse;
+    border-radius: 7px
+}
+
+.booksPage-bookContainer-bookItem > div{
+     display: flex;
+     /* flex-direction: column; */
+    /*color:#505050;
+    width: 250px;
+    height:250px;
+    margin: 20px; */
+
+    margin: 3px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.booksPage-bookContainer-bookItem > h2{
+     display: flex;
+     justify-content: center;
+    margin: 3px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.booksPage-bookContainer-bookItem > a{
+     display: flex;
+     justify-content: center;
+    margin: 3px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color:#505050;
+    border-radius: 7px;
+}
+.booksPage-bookContainer > a:hover{
+     display: flex;
+     justify-content: center;
+    margin: 3px;
+    padding: 10px;
+    background-color: #d6d4c7;
+    text-decoration: none;
+    color:#000000;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+/*      INPUT                 */
+
+input {
+    margin: 10px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    color: #999;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/*          DROP DOWN         */
+
+button{
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+select{
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+select {
+    padding: 8px; /* отступ вокруг текста */
+    font-size: 16px; /* размер шрифта */
+    border: 1px solid #ccc; /* граница */
+    border-radius: 5px; /* закругление углов */
+    outline: none; /* убираем стандартное выделение элемента */
+}
+
+select:hover {
+    border-color: #555; /* цвет границы при наведении */
+}
+
+select:focus {
+    border-color: #007bff; /* цвет границы при активации (фокусе) */
+}
